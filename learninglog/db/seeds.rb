@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+user = User.create(firstname: "eleni", lastname: "chappen", password: "what", email: "elenichappen@gmail.com")
+
+logs = Log.create([
+  {user_id: 1, text: "first log for me", public: true},
+  {user_id: 1, text: "log numero dos", public: false}
+]);
