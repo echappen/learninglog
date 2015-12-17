@@ -1,5 +1,4 @@
 = form_for @logs, url: {controller: "logs", action: "create"} do |f|
   = f.label :text
   = f.text_field :text, :class => "form-control", :placeholder => "Add your log here"
-  = f.label :description
   = f.submit "Submit", :class => "btn btn-primary"

@@ -10,6 +10,7 @@ class LogsController < ApplicationController
   end
 
   def create
-
+    Log.create(user_id: params[:user_id], text: params[:log][:text])
+    redirect_to user_logs_path
   end
 end
